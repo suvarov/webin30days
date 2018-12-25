@@ -1,12 +1,12 @@
 function getData() {
   var conn = new ActiveXObject("ADODB.Connection") ;
 
-  var connStr = "Data Source=KZALAWS003;Initial Catalog=CityDelivery;User ID=telebot;Password=5jnUX4b5CtqWjHGm;Provider=SQLOLEDB";
+  var connStr = "Data Source=<server>;Initial Catalog=CityDelivery;User ID=<username>;Password=<password>;Provider=SQLOLEDB";
 
   conn.Open(connStr);
   var rs = new ActiveXObject("ADODB.Recordset");
 
-  rs.Open("SELECT * FROM CityDelivery.dbo.vw_ADUserInfo", conn);
+  rs.Open("SELECT * FROM <table>", conn);
   rs.MoveFirst
   while(!rs.eof)
   {
