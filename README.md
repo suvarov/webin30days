@@ -10,3 +10,5 @@ Get ready to follow my journey through:
   * Angular.js
   * React.js
   * Vue.js
+
+`some text here`
